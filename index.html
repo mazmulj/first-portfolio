@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.webarchive">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <title>Mazmul Mohammed</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        <a href="#"><img src="logo.png" width="40" height="40"></a>
+                    </div>
+                    <div id="mainListDiv" class="main_list">
+                        <ul class="navlinks">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Photo Blog</a></li>
+                        </ul>
+                    </div>
+                    <span class="navTrigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </div>
+            </nav>
+            <section class="home">
+            </section>
+            <div class="main-text">
+                <span class="text">mazmul mohammed</span>
+                <!-- <p>I am an aspiring UI/front-end developer.<br>I like designing and photography.</p> -->
+                <!-- <hr class="style-two"> -->
+                <p class="line-1 anim-typewriter">An aspiring UX/UI designer.</p>
+            </div>
+            
+        </header>
+
+        <section class="section-about">
+            <h2>About Me</h2>
+            <p class="about">I am currently pursuing my Bachelor's degree in Computer Science at Memorial University. 
+                I am interested in front-end development and currently trying to learn more about it. So far I have worked on few small interesting projects that are available on my GitHub. 
+                I also like photography so you can go to my photo 
+            blog and check out some of my work.</p> 
+            <h2>Let's connect.</h2>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/mazmul.mohammed" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mazmul-mohammed-760990195/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href="https://github.com/mazmulj" target="_blank"><i class="ion-social-github"></i></a></li>
+                </ul>
+            <br>
+            <h2>Check out some of my work here.</h2>
+            <ul class="social">
+                <li><a href="https://github.com/mazmulj" target="_blank"><i class="ion-social-github"></i></a></li>
+            </ul>
+        </section>
+
+        <section class="section-resume">
+            <div class="wrapper">
+                <div class="edu">
+                    <h4>Education</h4>
+                </div>
+                <div class="edu-details">
+                    <h5>Memorial University of Newfoundland</h5>
+                    <p class="details">BSc in Computer Science. <br> Minors in Mathematics and Business Administration.</p>
+                    <p class="date">January, 2017 - present</p>
+                </div>
+                <div class="work">
+                    <h4>Work</h4>
+                </div>
+                <div class="edu-details">
+                    <h5>Student Assistant (Admissions Office)</h5>
+                    <p class="details">Memorial University, St. John's</p>
+                    <p class="date">May, 2019 - January, 2020</p>
+                    <h5>Student Assistant (Office of the Registrar)</h5>
+                    <p class="details">Memorial University, St. John's</p>
+                    <p class="date">September, 2018 - April, 2019</p>
+                    <h5>Customer Service Representative</h5>
+                    <p class="details">Sobeys, St. John's</p>
+                    <p class="date">May, 2018 - August, 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-photo">
+            <div class="photo">
+                <h3>Photo blog</h3>
+            <div class="gallery">
+                <img src="./resources/img/img1.JPG" class="img img1">
+                <img src="./resources/img/img2.JPG" class="img img2">
+                <img src="./resources/img/img3.JPG" class="img img3">
+                <img src="./resources/img/img4.JPG" class="img img4">
+
+            </div>
+            </div>
+
+        </section>
+
+        
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</html>

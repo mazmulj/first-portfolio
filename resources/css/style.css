@@ -1,0 +1,676 @@
+/*----*/
+/*BASIC SETUP*/
+/*----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*------*/
+/*REUSABLE CONTENTS*/
+/*------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;  
+}
+
+/*------*/
+/*----HEADERS----*/
+/*------*/
+
+header {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.JPG);
+    background-size: cover;
+    background-position: center; */
+    height: 100vh;
+    background-color: #000;
+}
+
+.main-text{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .name{
+    font-size: 250%;
+    color: #B1BFC5;
+    font-weight: 150;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* .main-text p{
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    word-spacing: 2px;
+    font-size: 110%;
+    letter-spacing: 1px;
+} */
+
+.photo{
+    margin-top: 5px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.text {
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: 'verdana';
+    font-size: 6em;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    /* 1px 18px 6px rgba(100, 100, 100, 0.4),
+    1px 22px 10px rgba(100, 100, 100, 0.2),
+    1px 25px 35px rgba(100, 100, 100, 0.2),
+    1px 30px 60px rgba(100, 100, 100, 0.4); */
+}
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.line-1{
+    font-family: 'Anonymous Pro', monospace;  
+    position: relative;
+    color: #fff;
+    width: 16em;
+    margin-top: 400px;
+    margin-left: 150px;
+    /* margin: 0 auto; */
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 110%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 16em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+h2{
+    color: #fff;
+    text-align: left;
+    font-size: 100%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-weight: 450;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+h3{
+    color: #fff;
+    font-size: 180%;
+    margin-top: 10px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4{
+    color: #000;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 100%;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h5{
+    color: #000;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 130%;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.section-about{
+    padding-top: 60px;
+    height: 70vh;
+    background-color: rgb(8, 8, 8);
+}
+
+hr.style-two {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.section-about p{
+    margin: 20px 390px 50px 200px;
+    text-align: left;
+    line-height: 1.5;
+    word-spacing: 2px;
+    font-weight: 250;
+    font-size: 90%;
+    color: rgb(172, 169, 169);
+}
+
+.social{
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.social li{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 200%;
+}
+
+.social li a:link,
+.social li a:visited{
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+    transition: color 0.3s;
+}
+
+.social li a:hover,
+.social li a:active{
+    color: #fff;
+}
+
+.section-photo{
+    background-color: rgb(19, 18, 18);
+    height: 100vh;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10px, 1fr));
+    grid-auto-rows: repeat(3,10vw);
+    grid-gap: 18px;
+    margin: 30px 80px 0 80px;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transform: scale(1.03);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.img:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img1{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.img2{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.img3{
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+}
+
+.img4{
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.section-resume{
+    background: #fff;
+    height: 80vh;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.wrapper > div:nth-child(even){
+    background: rgb(245, 245, 245);
+}
+
+.edu::after{
+    display: block;
+    height: 4px;
+    width: 120px;
+    background-color: #ffdc80;
+    content: " ";
+    margin: 10px auto 0 auto;
+}
+
+.details{
+    padding-right: 400px;
+    font-style: italic;
+    font-size: 90%;
+    padding-left: 10px;
+}
+
+.date{
+    margin-top: 5px;
+    padding-right: 300px;
+    text-align: right;
+    font-size: 80%;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+
+.work::after{
+    display: block;
+    height: 4px;
+    width: 70px;
+    background-color: #ffdc80;
+    content: " ";
+    margin: 10px auto 0 auto;
+}
+
+
+/*  */
+/*  */
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    line-height: 50px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    /* width: 100px;
+    height: 100px; */
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height: 50px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 50px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 1rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background-position: center top;
+	background-size:cover; */
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: rgb(15, 15, 15);
+}
+ 
+/*  */
+/*  */
+/*  */
+
